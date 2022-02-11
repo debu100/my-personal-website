@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debajit Chakraborty</title>
+    <link rel="stylesheet" href="Css\style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--<div> is an element by which we group contents together.These don't have
+ any height by default and therefore don't appear on the webpage by their own.
+We need to apply css styles to the div elements,by which they can apper on the page
+It stands for content division element and allows us to split up or divide the content into separate containers
+or boxes to affect the layout of each box separately.The div will have a height if it has some content in it.
+Now as it has h1 and p within it, it will have a height which is 76px which is just enough to keep the h1 and p 
+to fit it/contain it.
+viewport is just the screen that you are viewing the website on-laptop/mobile etc...
+padding and border increases the size of the element on which they are used, but margin does not.
+giving padding actually does not change the height and width of the element but it eventually makes the entire element bigger in size
+When we apply border to div or some element then we can see that the border does not affect the size of the part that has
+the actual element but it makes the whole element even larger.
+When we have padding it only pads the content but not things like the background image or the background color.
+margin does not affect the height or the width of the element,margin is space b/w 2 and more element.
+
+Block elements----takes up the whole width of the screen and blokcs out any other elements from sitting next to it
+on the left or the right.
+ex---p,h1 to h6, div, ol,ul,li, form element.
+<span> allows to highlight a section of my text, just select one part of the text in order to style it differently.
+<span> like div don't do much themselves unless they are used in conjuction with the CSS.
+<span> is an inline element. An inline elememt only takes as much space as it needs to in the height and in it's width
+common inline elements--- spans, images and anchor tags.
+
+IMP>>---
+THERE IS ONE PROBLEM WITH INLINE ELEMENTS
+YOU CAN'T CHANGE THE HEIGHT AND WIDTH OF THE ELEMENTS.BUT FOR BLOCK ELEMENTS WE CAN APPLY HEIGHT AND WIDTH 
+PROPERTIES AND THEY WORK SMOOTHLY.AND THEY ALSO DON'T ALLOW OTHER ELEMENTS SIT NEXT TO EACH OTHER.
+
+NOW, WE CAN ALSO CHANGE THE DISPLAY PROPERTY OF ANY GIVEN ELEMENT.WE CAN CHANGE A <P> TO AN INLINE ONE AND BY DOING 
+THIS WE LOSE THE ABILITY TO CHANGE IT'S HEIGHT AND WIDTH.AND WE CHANGE A <SPAN>TO A BLOCK ONE AND BY DOING THIS
+WE GAIN THE ABILITY TO CHANGE THE HEIGHT AND WIDTH OF THE BLCOK ELEMENT
+
+SO, WHAT SHOULD I DO IF I WANTED ELEMENTS THAT OCUUPY THE SAME LINE AND CA HAVE THE HEIGHT AND WIDTH PREOPERTIES
+
+WE HAVE DISPLAY: INLINE-BLOCK
+
+INSTEAD OF CHANGING A <P> TO INLINE CHANGE IT TO INLINE-BLOCK AND BY DOING THIS THE<P> WILL BEHAVE AS AN INLINE
+ELEMENT THAT IS IT WILL ALLOW OTHER ELEMENTS TO SIT NEXT TO IT AND WE WILL ALSO HAVE ACCESS TO THE HEIGHT AND
+WIDTH PROPERTIES.(VERY HELPFUL).
+
+BY DEFAULT <IMG> ARE INLINE-BLOCK ELEMENTS.(KIND OF) CHECK THE LINK IN RESOURCE.
+
+WE WILL TREAT <IMG> AS INLINE-BLOCK ELEMENTS.AS WE CAN CHANGE THEIR HEIGHT AND WIDTH AND THEY ALSO GET DIAPLAYED 
+NEXT TO EACH OTHER IN THE SAME LINE.
+
+DISPLAY:NONE COMPLETELY REMOVES THE ELEMENT FROM THE PAGE AS IF IT NEVER EXISTED.IT'S ORIGINAL POSITION WILL NOT BE
+RESTORED IN ANY WAY, IT'S SAME AS DELETING THE ELEMNET FROM THE HTML FILE.
+
+VISIBILTY:HIDDEN  HERE THE ELEMENT WILL BE REMOVED BUT THE ACTUAL POSITION WILL BE STORED AND A SPACE WILL BE THERE
+ON THE PAGE.ALL THE OTHER ELEMENTS STILL FLOW AROUND IT AS IF THAT ELEMNT IS STILL PRESENT ON THE PAGE.
+WITH PADDING WE CAN INCREASE THE WIDTH AND HEIGHT OF AN ELEMENT(LIKE DIV)
+BORDER DOES THE SAME.-->
+
+    <div class="top-container">
+      <img class="top-cloud" src="images\cloud.png" alt="cloud-img" />
+      <h1>I'm Debajit.</h1>
+      <h2 class="dev">a web developer</h2>
+      <img class="bottom-cloud" src="images\cloud.png" alt="cloud-img" />
+      <img src="images\mountain.png" alt="mountain-img" />
+    </div>
+    <div class="middle-container">
+      <div class="profile">
+        <img class="p-image" src="images\profile-img.png" alt="Profile-image" />
+        <h2>Hello.</h2>
+        <p>
+          Seeking a challenging role at a reputed IT organisation to utilize my
+          engineering skills that can contribute <br />to the company's growth
+          as well as enhance my knowledge by exploring new things.
+        </p>
+      </div>
+      <hr />
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="icon-one" src="images\coding.png" alt="icon-1" />
+          <h3>Design & Development</h3>
+          <p>
+            Completed a gigantic course of total around 64 hours from
+            <a href="https://www.udemy.com/" target="_blank"
+              ><strong><em>Udemy</em></strong></a
+            >.The instructor of this course was Colt Steele & his teaching
+            methodology was truly outstanding throughout the entire course.<a
+              href="https://www.udemy.com/certificate/UC-32696ae2-02f3-48b2-bb54-3c75f6311b20/"
+              target="_blank"
+              >Click here to view Certificate.</a
+            >
+          </p>
+        </div>
+        <div class="skill-row">
+          <img class="icon-two" src="images\coding-1.png" alt="icon-2" />
+          <h3>Passionate About Web Development</h3>
+          <p>
+            Completed another short term online web development training course
+            from
+            <a href="https://trainings.internshala.com/" target="_blank"
+              ><strong><em>Internshala</em></strong></a
+            >
+            .The course content helped me sharpen my skills.<a
+              href="https://trainings.internshala.com/certificate/preview/web-development/coc/dashbaord"
+              target="_blank"
+              >Click Here to View Certificate.</a
+            >
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>If you love Coding as much as I do.</h3>
+        <p class="conatct-mssg">
+          Love creating beautiful websites? I certainly do!! Get in touch and we
+          can build awesome websites by coding together.
+        </p>
+        <a class="btn" href="mailto:ztmjs2022@gmail.com">CONTACT ME</a>
+      </div>
+    </div>
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/" target="_blank"
+        >LinkedIn</a
+      >
+      <a class="footer-link" href="https://twitter.com/" target="_blank"
+        >Twitter</a
+      >
+      <a class="footer-link" href="https://www.facebook.com/" target="_blank"
+        >Facebook</a
+      >
+      <p class="copyright">© 2022 Debajit Chakraborty.</p>
+      <a
+        href="https://www.flaticon.com/free-icons/web-development"
+        title="web development icons"
+        >Web development icons created by Freepik - Flaticon</a
+      >
+      <a
+        href="https://www.flaticon.com/free-icons/web-development"
+        title="web development icons"
+        >Web development icons created by surang - Flaticon</a
+      >
+    </div>
+  </body>
+</html>
